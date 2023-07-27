@@ -3,7 +3,7 @@ import boto3
 
 def update_dns_records(hosted_zone_id, changes):
     # Replace 'your_access_key' and 'your_secret_key' with your AWS credentials.
-    route53_client = boto3.client('route53', aws_access_key_id='AKIAUTMPNZQXMPQNIF5X', aws_secret_access_key='rqV1MZ9XYqHPKYNxMX1RHHcSXSRigQdejN7I64Rx')
+    route53_client = boto3.client('route53', aws_access_key_id='', aws_secret_access_key='')
 
     response = route53_client.change_resource_record_sets( 
         HostedZoneId=hosted_zone_id,
